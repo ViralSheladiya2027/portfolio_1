@@ -5,7 +5,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
-import { BottomNavigationAction, BottomNavigation, Button } from "@mui/material";
+import { BottomNavigationAction, BottomNavigation } from "@mui/material";
 
 const Nav = () => {
   const [value, setValue] = React.useState("#");
@@ -14,13 +14,11 @@ const Nav = () => {
     setValue(newValue);
   };
 
-  // const navigate=useNavigate();
-
   return (
     <div className="nav_container">
       <BottomNavigation
         sx={{
-          bgcolor: "#00bcd4",
+          bgcolor: "blueviolet",
           borderRadius: 4,
           position: "fixed",
           bottom: 0,
@@ -40,7 +38,7 @@ const Nav = () => {
           href="#about"
           icon={<PersonOutlineOutlinedIcon />}
         />
-       <BottomNavigationAction
+        <BottomNavigationAction
           label="Experience"
           href="#experience"
           icon={<MenuBookOutlinedIcon />}
@@ -49,7 +47,6 @@ const Nav = () => {
         <BottomNavigationAction
           label="Service"
           href="#service"
-          // onClick={()=>navigate("/service")}
           icon={<WorkHistoryOutlinedIcon />}
         />
 

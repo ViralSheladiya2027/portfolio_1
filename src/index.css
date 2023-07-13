@@ -26,3 +26,8 @@ section{
   /* margin-left: 8rem;
   margin-right: 8rem; */
 }
+
+section h2{
+  color:blueviolet;
+  margin-bottom:2rem;
+}

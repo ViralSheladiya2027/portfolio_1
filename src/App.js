@@ -16,7 +16,7 @@ import Footer from "./Components/footer/Footer";
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Nav />
       <About />
       <Experience />
@@ -24,8 +24,9 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
-      {/* <BrowserRouter>
-    <Routes>
+      {/* <BrowserRouter> */}
+      
+    {/* <Routes>
     <Route path="/" element={<Header />}/>
       <Route path="/about" element={<About />}/>
       <Route path="/experience" element={<Experience />}/>
