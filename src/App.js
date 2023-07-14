@@ -21,7 +21,7 @@ function App() {
       <About />
       <Experience />
       <Services />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Contact />
       <Footer />
       {/* <BrowserRouter> */}

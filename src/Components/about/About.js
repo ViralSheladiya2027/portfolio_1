@@ -9,7 +9,7 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 const About = () => {
   return (
     <section id="about">
-      <Box p={3}>
+      <Box p={4} >
         <Typography variant="h6" component="h5">
           Get To Know
         </Typography>
