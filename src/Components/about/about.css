@@ -9,5 +9,7 @@
     
 }
 .paper:hover{
-    color: aquamarine;
+    /* color: aquamarine; */
+    background-color: transparent;
+    
 }

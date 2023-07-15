@@ -1,11 +1,34 @@
 import React from "react";
 import "./contact.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Box, Typography, Grid, Paper, Link } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Grid,
+  Paper,
+  Link,
+  Stack,
+  TextField,
+  Button,
+} from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section id="contact">
       <Box p={3}>
@@ -16,62 +39,111 @@ const Contact = () => {
           Contact Me
         </Typography>
         <Box mt={3} />
-        {/* <Grid container spacing={3}> */}
-        <Grid container flexDirection="column" spacing={3}>
-          <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
-              <Box p={2}>
-                <MailOutlineIcon />
-                <Typography variant="h6" component="h6" mb={1}>
-                  Email
-                </Typography>
-                <Typography variant="body2" component="p">
-                  sunny788999@gmail.com
-                </Typography>
-                <Link href="sunny788999@gmail.com" underline="none">
-                  Send a Message
-                </Link>
-              </Box>
-            </Paper>
+
+        <Grid container p={1} spacing={1}>
+          <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6} p={1} ml={2}>
+              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+                <Box p={2}>
+                  <MailOutlineIcon />
+                  <Typography variant="h6" component="h6" mb={1}>
+                    Email
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    sunny788999@gmail.com
+                  </Typography>
+                  <Link href="mailto:sunny788999@gmail.com" underline="none">
+                    Send a Message
+                  </Link>
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid itemxs={12} md={6} p={1} ml={2}>
+              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+                <Box p={2}>
+                  <InstagramIcon />
+                  <Typography variant="h6" component="h6" mb={1}>
+                    Instagram
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    sunnypatel_2710
+                  </Typography>
+                  <Link
+                    href="https://www.instagram.com/sunnypatel_2710"
+                    underline="none"
+                  >
+                    Send a Message
+                  </Link>
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={6} p={1} ml={2}>
+              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+                <Box p={2}>
+                  <WhatsAppIcon />
+                  <Typography variant="h6" component="h6" mb={1}>
+                    WhatsApp
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    88492 03645
+                  </Typography>
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=+918849203645"
+                    underline="none"
+                  >
+                    Send a Message
+                  </Link>
+                </Box>
+              </Paper>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
-              <Box p={2}>
-                <InstagramIcon />
-                <Typography variant="h6" component="h6" mb={1}>
-                  Instagram
-                </Typography>
-                <Typography variant="body2" component="p">
-                  sunnypatel_2710
-                </Typography>
-                <Link href="sunny788999@gmail.com" underline="none">
-                  Send a Message
-                </Link>
-              </Box>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
-              <Box p={2}>
-                <WhatsAppIcon />
-                <Typography variant="h6" component="h6" mb={1}>
-                  WhatsApp
-                </Typography>
-                <Typography variant="body2" component="p">
-                  88492 03645
-                </Typography>
-                <Link
-                  href="https://api.whatsapp.com/send?phone=+918849203645"
-                  underline="none"
-                >
-                  Send a Message
-                </Link>
-              </Box>
-            </Paper>
+          <Grid item xs={12} md={6}>
+            <Stack
+              component="form"
+              spacing={2}
+              autoComplete="off"
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <TextField
+                id="outlined-basic"
+                label="Your Full Name"
+                size="small"
+                variant="outlined"
+                required
+              />
+
+              <TextField
+                id="outlined-basic"
+                label="Your Email"
+                size="small"
+                variant="outlined"
+                required
+              />
+              <TextField
+                id="outlined-basic"
+                label="Your Message"
+                size="small"
+                variant="outlined"
+                multiline
+                rows={4}
+                required
+              />
+              <Button
+                variant="contained"
+                sx={{
+                  textTransform: "capitalize",
+                  width: 175,
+                  bgcolor: "var(--button-color)",
+                  mb: 5,
+                }}
+                className="btn"
+              >
+                Send Message
+              </Button>
+            </Stack>
           </Grid>
         </Grid>
-
-        {/* </Grid> */}
       </Box>
     </section>
   );

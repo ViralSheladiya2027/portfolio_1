@@ -16,7 +16,7 @@ const Experience = () => {
         <Box mt={2} />
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
-            <Box sx={{ bgcolor: "blueviolet", p: 4, borderRadius: 4 }}>
+            <Box sx={{ bgcolor: "var(--button-color)" , p: 4, borderRadius: 4 }}>
               <Typography variant="h6">Frontend Development</Typography>
               <Box mb={2} />
               <Stack direction="row" spacing={2}>
@@ -64,7 +64,7 @@ const Experience = () => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Box sx={{ bgcolor: "blueviolet", p: 4, borderRadius: 4 }}>
+            <Box sx={{ bgcolor: "var(--button-color)" , p: 4, borderRadius: 4 }}>
               <Typography variant="h6">Backend Development</Typography>
               <Box mb={2} />
               <Stack direction="row" spacing={2}>

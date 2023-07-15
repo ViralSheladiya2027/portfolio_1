@@ -6,6 +6,7 @@ import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import { BottomNavigationAction, BottomNavigation } from "@mui/material";
+import { Hidden } from "@mui/material";
 
 const Nav = () => {
   const [value, setValue] = React.useState("#");
@@ -16,14 +17,16 @@ const Nav = () => {
 
   return (
     <div className="nav_container">
+      <Hidden mdUp>
       <BottomNavigation
         sx={{
-          bgcolor: "blueviolet",
+          bgcolor: "var(--nav-color)",
           borderRadius: 4,
           position: "fixed",
           bottom: 0,
           left: 0,
           right: 0,
+         
         }}
         onChange={handleChange}
         value={value}
@@ -56,6 +59,8 @@ const Nav = () => {
           icon={<MessageOutlinedIcon />}
         />
       </BottomNavigation>
+      </Hidden>
+      
     </div>
   );
 };

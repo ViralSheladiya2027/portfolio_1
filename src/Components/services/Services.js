@@ -18,7 +18,7 @@ const Services = () => {
         <Box mt={2} />
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--experience-color)" }}>
               <Box p={2} textAlign="left">
                 <CodeOffIcon />
                 <Typography variant="h6" component="h6" mb={1}>
@@ -33,7 +33,7 @@ const Services = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--experience-color)" }}>
               <Box p={2} textAlign="left">
                 <TransformIcon />
                 <Typography variant="h6" component="h6" mb={1}>

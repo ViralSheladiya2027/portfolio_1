@@ -13,28 +13,22 @@ import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 
+
 function App() {
   return (
     <>
       <Header />
+      
       <Nav />
+     
+      
       <About />
       <Experience />
       <Services />
       {/* <Portfolio /> */}
       <Contact />
-      <Footer />
-      {/* <BrowserRouter> */}
-      
-    {/* <Routes>
-    <Route path="/" element={<Header />}/>
-      <Route path="/about" element={<About />}/>
-      <Route path="/experience" element={<Experience />}/>
-      <Route path="/services" element={<Services />}/>
-      <Route path="/contact" element={<Contact />}/>
-      
-    </Routes>
-  </BrowserRouter> */}
+      {/* <Footer /> */}
+     
   
     </>
   );

@@ -19,7 +19,7 @@ const About = () => {
         <Box mt={2} />
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Experience
@@ -32,7 +32,7 @@ const About = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Clients
@@ -45,7 +45,7 @@ const About = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "blueviolet" }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Projects
@@ -68,7 +68,7 @@ const About = () => {
         <Box mt={2} />
         <Button
           variant="contained"
-          sx={{ textTransform: "capitalize", bgcolor: "blueviolet" }}
+          sx={{ textTransform: "capitalize", bgcolor: "var(--button-color)"  }}
           className="btn"
         >
           Let's Talk
