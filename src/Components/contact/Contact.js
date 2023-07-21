@@ -22,12 +22,9 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendForm('service_c90qo2e', 'template_unr1y5a', form.current, 'bukqwSC8MjI4pAWS5')
+      
+      e.target.reset()
   };
   return (
     <section id="contact">
@@ -106,31 +103,33 @@ const Contact = () => {
               onSubmit={sendEmail}
             >
               <TextField
-                id="outlined-basic"
+                name="name"
                 label="Your Full Name"
                 size="small"
-                variant="outlined"
+                type="text"
                 required
               />
 
               <TextField
-                id="outlined-basic"
+                name="email"
                 label="Your Email"
                 size="small"
-                variant="outlined"
+                type="email"
                 required
               />
               <TextField
-                id="outlined-basic"
+                
                 label="Your Message"
                 size="small"
                 variant="outlined"
+                name="message" 
                 multiline
                 rows={4}
                 required
               />
               <Button
                 variant="contained"
+                type="submit"
                 sx={{
                   textTransform: "capitalize",
                   width: 175,
