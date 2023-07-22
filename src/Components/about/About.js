@@ -70,6 +70,7 @@ const About = () => {
           variant="contained"
           sx={{ textTransform: "capitalize", bgcolor: "var(--button-color)"  }}
           className="btn"
+          href="#contact"
         >
           Let's Talk
         </Button>

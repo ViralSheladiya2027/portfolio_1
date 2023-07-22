@@ -16,16 +16,16 @@ const Nav = () => {
   };
 
   return (
-    <div className="nav_container">
+    <>
       <Hidden mdUp>
       <BottomNavigation
         sx={{
           bgcolor: "var(--nav-color)",
           borderRadius: 4,
           position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
+          bottom: 10,
+          left: 15,
+          right: 15,
          
         }}
         onChange={handleChange}
@@ -60,8 +60,7 @@ const Nav = () => {
         />
       </BottomNavigation>
       </Hidden>
-      
-    </div>
+    </>
   );
 };
 

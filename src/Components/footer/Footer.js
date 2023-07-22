@@ -1,52 +1,110 @@
 import {
   Box,
+  Button,
+  Grid,
   List,
-  ListItem,
-  ListItemButton,
+  IconButton,
   Stack,
+  ListItemButton,
   Typography,
 } from "@mui/material";
 import React from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
     <>
-      <Box sx={{ bgcolor: "blueviolet", height: "60vh" }}>
-        <Typography align="center"variant="h5" gutterBottom p={2}>
+      <Box  sx={{ bgcolor: "blueviolet"}}>
+        <Typography align="center" variant="h5" gutterBottom p={2}>
           EGATOR
         </Typography>
-        {/* <Stack spacing={2}> */}
-        <List  sx={{
+
+        <List
+          sx={{
             display: "flex",
-            flexDirection: { xs: "column", sm: "column", md: "row" },
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "center",
             alignItems: "center",
-            // padding: 0,
           }}
         >
-        
-          <ListItem>
-            <ListItemButton  href="#">Home</ListItemButton>
-          </ListItem>
+          <Grid>
+            <ListItemButton href="#">Home</ListItemButton>
+          </Grid>
 
-          <ListItem>
+          <Grid>
             <ListItemButton href="#about">About</ListItemButton>
-          </ListItem>
+          </Grid>
 
-          <ListItem>
+          <Grid>
             <ListItemButton href="#experience">Experience</ListItemButton>
-          </ListItem>
+          </Grid>
 
-          <ListItem>
+          <Grid>
             <ListItemButton href="#service">Service</ListItemButton>
-          </ListItem>
+          </Grid>
 
-          <ListItem>
+          <Grid>
             <ListItemButton href="#contact">Contact</ListItemButton>
-          </ListItem>
-          {/* </Box> */}
+          </Grid>
         </List>
-        {/* </Stack> */}
+
+        <Box mt={2} justifyContent="center" display="flex">
+          <Stack direction="row" spacing={2}>
+            <IconButton
+              sx={{
+                border: "1px solid transparent",
+                bgcolor: "black",
+                color: "white",
+              }}
+              href="https://linkedin.com/in/sunny-patel-b516b022a"
+              aria-label="linkedin"
+            >
+              <LinkedInIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                border: "1px solid transparent",
+                bgcolor: "black",
+                color: "white",
+              }}
+              href="http://github.com/SunnyPatel2027"
+              aria-label="github"
+            >
+              <GitHubIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                border: "1px solid transparent",
+                bgcolor: "black",
+                color: "white",
+              }}
+              href="https://www.instagram.com/sunnypatel_2710"
+              aria-label="instagram"
+            >
+              <InstagramIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                border: "1px solid transparent",
+                bgcolor: "black",
+                color: "white",
+              }}
+              aria-label="twitter"
+            >
+              <TwitterIcon />
+            </IconButton>
+          </Stack>
+        </Box>
+
+        <Box m={5}justifyContent="center" display="flex">
+          <Typography variant="small">
+            Portfolio. All rights reserviced
+          </Typography>
+        </Box>
+        <Box height={40} />
       </Box>
     </>
   );

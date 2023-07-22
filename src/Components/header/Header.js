@@ -22,10 +22,10 @@ const Header = () => {
         </Typography>
         <Box mt={2} />
        <Headerbutton />
-       <div className="me">
-       <img src={me1} alt="me" />
-       </div>
-      <Socialmedia/>
+   
+       <img src={me1} alt="me" className="me"/>
+       
+      {/* <Socialmedia/> */}
       </Box>
       </section>
     
