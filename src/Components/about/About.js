@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import about1 from "../../Image/about1.jpg";
+// import about1 from "../../Image/about1.jpg";
 import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 import PeopleIcon from "@mui/icons-material/People";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
@@ -19,7 +19,7 @@ const About = () => {
         <Box mt={2} />
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)",color:"var(--paper-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Experience
@@ -32,7 +32,7 @@ const About = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)",color:"var(--paper-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Clients
@@ -45,7 +45,7 @@ const About = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Paper className="paper" sx={{ bgcolor: "var(--button-color)"  }}>
+            <Paper className="paper" sx={{ bgcolor: "var(--button-color)",color:"var(--paper-color)"  }}>
               <Box p={2}>
                 <Typography variant="h6" component="h6">
                   Projects

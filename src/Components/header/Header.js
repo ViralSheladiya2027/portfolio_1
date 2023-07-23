@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import Headerbutton from "./Headerbutton"
 import me1 from "../../Image/me1.jpg"
-import Socialmedia from "./Socialmedia";
+// import Socialmedia from "./Socialmedia";
 import { Typography,Box } from "@mui/material";
 
 

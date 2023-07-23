@@ -10,7 +10,7 @@ const Headerbutton = () => {
         <Button
           className="btn"
           download
-          sx={{ textTransform: "capitalize", color: "blueviolet" }}
+          sx={{ textTransform: "capitalize", color: "var(--button-color)"  }}
           type="text"
           variant="outlined"
           href={CV}
@@ -18,7 +18,7 @@ const Headerbutton = () => {
           Download CV
         </Button>
         <Button
-          sx={{ textTransform: "capitalize", bgcolor: "blueviolet" }}
+          sx={{ textTransform: "capitalize", bgcolor: "var(--button-color)"  }}
           href="#contact"
           className="btn"
           variant="contained"

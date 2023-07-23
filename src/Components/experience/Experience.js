@@ -1,6 +1,6 @@
 import React from "react";
 import "./experience.css";
-import { Stack, Typography, Box, IconButton, Grid } from "@mui/material";
+import { Stack, Typography, Box, Grid } from "@mui/material";
 import VerifiedIcon from "@mui/icons-material/Verified";
 
 const Experience = () => {
@@ -26,21 +26,7 @@ const Experience = () => {
                   <small>Experience</small>
                 </Stack>
                 <Box width="40px" />
-                <VerifiedIcon />
-                <Stack direction="column" spacing={0.1}>
-                  <Typography variant="subtitle1">React</Typography>
-                  <small>Experience</small>
-                </Stack>
-              </Stack>
-              <Box mb={2} />
-              <Stack direction="row" spacing={2}>
-                <VerifiedIcon />
-                <Stack direction="column" spacing={0.1}>
-                  <Typography variant="subtitle1">Flutter</Typography>
-                  <small>Experience</small>
-                </Stack>
-                <Box width="40px" />
-                <VerifiedIcon />
+                <VerifiedIcon color="primary" />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">React</Typography>
                   <small>Experience</small>
@@ -54,7 +40,21 @@ const Experience = () => {
                   <small>Experience</small>
                 </Stack>
                 <Box width="40px" />
-                <VerifiedIcon />
+                <VerifiedIcon color="primary" />
+                <Stack direction="column" spacing={0.1}>
+                  <Typography variant="subtitle1">React</Typography>
+                  <small>Experience</small>
+                </Stack>
+              </Stack>
+              <Box mb={2} />
+              <Stack direction="row" spacing={2}>
+                <VerifiedIcon color="primary" />
+                <Stack direction="column" spacing={0.1}>
+                  <Typography variant="subtitle1">Flutter</Typography>
+                  <small>Experience</small>
+                </Stack>
+                <Box width="40px" />
+                <VerifiedIcon color="primary" />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">React</Typography>
                   <small>Experience</small>
@@ -74,7 +74,7 @@ const Experience = () => {
                   <small>Experience</small>
                 </Stack>
                 <Box width="40px" />
-                <VerifiedIcon />
+                <VerifiedIcon color="primary" />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">React</Typography>
                   <small>Experience</small>
@@ -82,13 +82,13 @@ const Experience = () => {
               </Stack>
               <Box mb={2} />
               <Stack direction="row" spacing={2}>
-                <VerifiedIcon />
+                <VerifiedIcon color="primary"  />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">Flutter</Typography>
                   <small>Experience</small>
                 </Stack>
                 <Box width="40px" />
-                <VerifiedIcon />
+                <VerifiedIcon color="primary" />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">React</Typography>
                   <small>Experience</small>
@@ -102,7 +102,7 @@ const Experience = () => {
                   <small>Experience</small>
                 </Stack>
                 <Box width="40px" />
-                <VerifiedIcon />
+                <VerifiedIcon color="primary" />
                 <Stack direction="column" spacing={0.1}>
                   <Typography variant="subtitle1">React</Typography>
                   <small>Experience</small>

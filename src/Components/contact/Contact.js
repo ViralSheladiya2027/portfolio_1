@@ -22,9 +22,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_c90qo2e', 'template_unr1y5a', form.current, 'bukqwSC8MjI4pAWS5')
-      
-      e.target.reset()
+    emailjs.sendForm(
+      "service_c90qo2e",
+      "template_unr1y5a",
+      form.current,
+      "bukqwSC8MjI4pAWS5"
+    );
+
+    e.target.reset();
   };
   return (
     <section id="contact">
@@ -40,7 +45,13 @@ const Contact = () => {
         <Grid container p={1} spacing={1}>
           <Grid item xs={12} md={4}>
             <Grid item xs={12} md={6} p={1} ml={2}>
-              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+              <Paper
+                className="paper"
+                sx={{
+                  bgcolor: "var(--button-color)",
+                  color: "var(--paper-color)",
+                }}
+              >
                 <Box p={2}>
                   <MailOutlineIcon />
                   <Typography variant="h6" component="h6" mb={1}>
@@ -56,7 +67,13 @@ const Contact = () => {
               </Paper>
             </Grid>
             <Grid itemxs={12} md={6} p={1} ml={2}>
-              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+              <Paper
+                className="paper"
+                sx={{
+                  bgcolor: "var(--button-color)",
+                  color: "var(--paper-color)",
+                }}
+              >
                 <Box p={2}>
                   <InstagramIcon />
                   <Typography variant="h6" component="h6" mb={1}>
@@ -75,7 +92,13 @@ const Contact = () => {
               </Paper>
             </Grid>
             <Grid item xs={12} md={6} p={1} ml={2}>
-              <Paper className="paper" sx={{ bgcolor: "var(--button-color)" }}>
+              <Paper
+                className="paper"
+                sx={{
+                  bgcolor: "var(--button-color)",
+                  color: "var(--paper-color)",
+                }}
+              >
                 <Box p={2}>
                   <WhatsAppIcon />
                   <Typography variant="h6" component="h6" mb={1}>
@@ -106,23 +129,44 @@ const Contact = () => {
                 name="name"
                 label="Your Full Name"
                 size="small"
+                focused
                 type="text"
+                sx={{
+                  input: { color: "white" },
+                  label: {
+                    color: "#ffffff",
+                  },
+                  // border:"1px solid white"
+                }}
                 required
               />
 
               <TextField
                 name="email"
                 label="Your Email"
+                focused
                 size="small"
                 type="email"
+                sx={{
+                  input: { color: "white" },
+                  label: {
+                    color: "#ffffff",
+                  },
+                }}
                 required
               />
               <TextField
-                
+                sx={{
+                  input: { color: "white" },
+                  label: {
+                    color: "#ffffff",
+                  },
+                }}
                 label="Your Message"
+                focused
                 size="small"
                 variant="outlined"
-                name="message" 
+                name="message"
                 multiline
                 rows={4}
                 required

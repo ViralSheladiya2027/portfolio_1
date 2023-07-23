@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Grid,
   List,
   IconButton,
@@ -17,7 +16,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <>
-      <Box  sx={{ bgcolor: "blueviolet"}}>
+      <Box  sx={{ bgcolor: "#355070"}}>
         <Typography align="center" variant="h5" gutterBottom p={2}>
           EGATOR
         </Typography>

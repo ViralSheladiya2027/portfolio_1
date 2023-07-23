@@ -9,7 +9,7 @@
 }
 
 body {
-  background : #263238;
+  background : #010c18;
   color: white;
   font-family: 'Poppins', sans-serif;
   
@@ -25,12 +25,13 @@ section{
 }
 
 section h2{
-  color:blueviolet;
+  color:#355070;
   margin-bottom:2rem;
 }
 
 :root{
-  --button-color:blueviolet;
-  --experience-color:blueviolet;
-  --nav-color:#231942;
+  --button-color:#355070;
+  --experience-color:#355070;
+  --nav-color:#2c5485;
+  --paper-color:white;
 }
