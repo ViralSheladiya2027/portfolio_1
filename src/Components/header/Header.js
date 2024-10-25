@@ -15,7 +15,7 @@ const Header = () => {
         Hello I'm
         </Typography>
         <Typography variant="h4" component="h2">
-        Viral Sheladiya
+        Sunny Gadhiya
         </Typography>
         <Typography variant="h6" component="h5">
         Fullstack Developer

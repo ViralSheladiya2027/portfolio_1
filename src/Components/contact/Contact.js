@@ -156,19 +156,18 @@ const Contact = () => {
                 required
               />
               <TextField
+                name="Message"
+                label="Your Message"
+                focused
+                rows= "4"
+                size="small"
+                type="email"
                 sx={{
                   input: { color: "white" },
                   label: {
                     color: "#ffffff",
                   },
                 }}
-                label="Your Message"
-                focused
-                size="small"
-                variant="outlined"
-                name="message"
-                multiline
-                rows={4}
                 required
               />
               <Button
